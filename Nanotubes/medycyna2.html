@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Exploding nanobubbles can kill cancer cells </title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
+<SCRIPT LANGUAGE= "JavaScript" type= "text/javascript">
+		 function check()
+		 {
+		 var user=document.login.login.value;
+		 var pass=document.login.pass.value;
+		 var spr1="admin";
+		 var spr2="admin"
+		 if((user==spr1)&& (pass==spr2))
+		 {
+			alert("Success! Redirecting...");
+			localStorage.setItem("logowanie","1");
+			document.location.href = "index.html";
+		 }
+		 else
+			alert("Oops, that's not a match. Try Again.");
+		 
+		 }
+		 
+		 function logoff()
+		 {
+		 if((localStorage.logowanie)!="1")
+			alert("You must be logged in to log off");
+		else
+		{	alert("Succesfully logout.");
+			localStorage.removeItem("logowanie");
+			}
+		 }
+		 
+		 function login()
+		 {
+		  if((localStorage.logowanie)=="1")
+			alert("You are already logged in.");
+		  else document.location.href = "login.html";
+		 }
+		 
+		 function zalogowany()
+		 {
+		 if((localStorage.logowanie)!="1")
+			{
+			alert("You must be logged in to view this article.");
+			document.location.href="login.html";
+			}
+		 }
+		 
+		 </script>
+  
+  
+</head>
+<body onLoad="zalogowany();">
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"> Carbon nanotube </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+		<li><a onClick="login();">Log in</a></li>
+		<li> <a onClick="logoff();">Log off</a></li>
+		<li><a href="rejestracja.html">Registration</a></li>
+
+		
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html">Home</a></li>
+		<li><a onClick="login();">Log in</a></li>
+		<li> <a onClick="logoff();">Log off</a></li>
+		<li><a href="rejestracja.html">Registration</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <br><br>
+
+
+
+  
+  
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+	  
+	  	  	  <br /><br />
+	  	<div class="card-panel hoverable"> <img src="img/logo/medycyna/8.jpg" style="width:100%;height:100%" alt="Cancer vs Nanotubes"> 
+
+		<h5 class="center"> Exploding nanobubbles can kill cancer cells </h5>
+        <p class="light"> </p>
+		<p>
+		Clusters of gold atoms can detect and kill cancer cells commonly 
+		left behind after tumor-removal surgery, according to a study of a new
+		nanotechnology technique. For now, the approach has only been tried in a 
+		handful of mice. But the researchers are designing a clinical trial that
+		could begin testing the therapy in humans in the next 2 years. If the technique
+		proves successful in people, it could dramatically improve the odds for cancer patients,
+		particularly in cases where surgically removing an entire tumor is impossible.
+		</p>
+		<p>
+		When surgeons operate on cancer patients, they do their best to remove every last
+		diseased cell, because any left behind can grow into new tumors or metastasize throughout 
+		the body. Oncologists then typically follow up surgery with either radiation treatments or 
+		chemotherapy to increase the chances of 
+		eliminating any residual tumor cells. But this standard approach to fighting cancer is anything but foolproof.
+		</p>
+		<p>
+		In recent years, physicians and scientists have looked to nanotechnology for help.
+		One approach pioneered over the last decade by researchers at Rice University in Houston,
+		Texas, and elsewhere has shown that clusters of gold atoms known as nanoparticles can serve as 
+		a potent weapon against cancer cells. Solid cancer tumors typically have leaky blood vessels. As 
+		a result, when gold nanoparticles are injected into the bloodstream, they tend to seep out of the
+		vessel openings and congregate around tumors. To clean up their surroundings, those cells then often
+		engulf the nanoparticles. But once inside the cells, the nanoparticles can act as Trojan horses.
+		When researchers hit the gold atoms with infrared
+		laser light, which can travel through centimeters of tissue, the particles heat up and kill the cancer cells.
+		</p>
+		<p>
+		<img src="img/logo/medycyna/4.jpg" class="left" style="padding:1%;width:50%;height:50%" alt="Nanobubbles"> Unfortunately, 
+		the nanoparticle heater strategy has two problems, says Dmitri Lapotko, a physicist formerly
+		with Rice and now head of laser science at Masimo Corporation, a medical nanotechnology company 
+		in Irvine, California. The first is that some gold nanoparticles invariably end up in and around 
+		normal cells, so healthy tissue can get damaged when the lasers go after cancers. As well, the lasers
+		that are normally used for heating the particles fire continuous beams of infrared light. This too 
+		spreads the heat far beyond cancer cells and into the normal tissue. In cases where tumors grow in 
+		and around vital tissues, such as nerves or arterial walls, 
+		any collateral damage to healthy tissues can be debilitating or dangerous.
+		</p>
+		<p>
+		In an effort to narrow the therapy’s focus, Lapotko and 
+		colleagues sought to modify the approach to zapping nanoparticles. They 
+		started with mice that had been implanted with human squamous cell carcinoma,
+		cancer cells common in human head and neck tumors that are particularly difficult 
+		to treat with standard therapies. They decorated their gold nanoparticles with immune 
+		protein antibodies, which specifically latch onto receptors that sit on the surface of 
+		squamous cells. That concentrated the particles, creating clusters of dozens of them in and
+		around cancer cells. 
+		And instead of firing continuous laser beams, the researchers fired only ultrashort infrared pulses.
+		</p>
+		<p>
+		As hoped, this prevented the heat from spreading to surrounding normal tissues.
+		But the approach had an even more important effect: It caused temperatures to rise 
+		higher where there were large clusters of gold nanoparticles. This vaporized adjacent
+		water molecules, creating tiny bubbles that quickly expand and burst, ripping apart the 
+		cancer cells. They key, Lapotko says, is
+		that “nanoparticle clusters produce nanobubbles in cancer cells and not normal tissue.”
+		</p>
+		<p>
+		Online today inNature Nanotechnology, Lapotko and his colleagues
+		report that those mini-explosions made it possible not only to pick up sound from where 
+		tumor cells were located—and thereby detect the presence of as few as three cancer cells—but
+		it also destroyed the cells in the process. For cases in which it was possible to surgically 
+		resect most of the cancer tissue, 100% of the animals survived, thanks to the fact that no residual
+		cancer cells remained alive.
+		And in cases where only partial surgical removal of a tumor was an option, 
+		the survival rate for the animals doubled.
+		</p>
+		<p>
+		“This is very, very interesting,” says Mien-Chie
+		Hung of the University of Texas MD Anderson Cancer Center in Houston, who is exploring treating tumors 
+		with nanoparticles. Hung notes that the approach dovetails very well with conventional surgery that is 
+		able to remove large tumors but is unable to identify cancer cells that remain behind. The new technique, 
+		he says, acts like microscopic surgery to target those residual cells. Hung emphasizes that many oncology
+		approaches that work in animals never wind up as effective in humans. But if this one does, 
+		it could open a whole new window into spotting and eliminating residual cancer cells left behind after surgery. 
+		</p>
+
+	
+		<p>
+
+<i> By Robert F. Service Feb. 15. 2016 <br>Images authors: Cameron Scott,University of Notre Dame</i>
+		</p>
+		<br /> <br />
+	<a href="http://www.slate.com/articles/technology/future_tense/2016/09/using_machine_learning_to_predict_how_nanoparticles_will_react_in_the_human.html">	Source </a>
+		
+		
+</div>
+</div>
+	</div>
+	    <div class="section">
+
+    
+      </div>
+    <br><br>
+
+
+    <div class="section">
+
+    </div>
+ 
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About</h5>
+          <p class="grey-text text-lighten-4">
+		  
+Treści zamieszczone nie są mojego autorstwa oraz nie posiadam do nich praw autorskich. Nie wykorzystuje zawartych tu treści w celach materialnych. Strona powstała jedynie w celach naukowych.<br>
+		  	  
+		  </p>
+
+
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

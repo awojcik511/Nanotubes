@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Electric fields can control the transport of water in carbon nanotubes </title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
+<SCRIPT LANGUAGE= "JavaScript" type= "text/javascript">
+		 function check()
+		 {
+		 var user=document.login.login.value;
+		 var pass=document.login.pass.value;
+		 var spr1="admin";
+		 var spr2="admin"
+		 if((user==spr1)&& (pass==spr2))
+		 {
+			alert("Success! Redirecting...");
+			localStorage.setItem("logowanie","1");
+			document.location.href = "index.html";
+		 }
+		 else
+			alert("Oops, that's not a match. Try Again.");
+		 
+		 }
+		 
+		 function logoff()
+		 {
+		 if((localStorage.logowanie)!="1")
+			alert("You must be logged in to log off");
+		else
+		{	alert("Succesfully logout.");
+			localStorage.removeItem("logowanie");
+			}
+		 }
+		 
+		 function login()
+		 {
+		  if((localStorage.logowanie)=="1")
+			alert("You are already logged in.");
+		  else document.location.href = "login.html";
+		 }
+		 
+		 function zalogowany()
+		 {
+		 if((localStorage.logowanie)!="1")
+			{
+			alert("You must be logged in to view this article.");
+			document.location.href="login.html";
+			}
+		 }
+		 
+		 </script>
+  
+  
+</head>
+<body onLoad="zalogowany();">
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"> Carbon nanotube </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+		<li><a onClick="login();">Log in</a></li>
+		<li> <a onClick="logoff();">Log off</a></li>
+		<li><a href="rejestracja.html">Registration</a></li>
+
+		
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html">Home</a></li>
+		<li><a onClick="login();">Log in</a></li>
+		<li> <a onClick="logoff();">Log off</a></li>
+		<li><a href="rejestracja.html">Registration</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <br><br>
+
+
+
+  
+  
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+	  
+	  	  	  <br /><br />
+	  	<div class="card-panel hoverable"> <img src="img/logo/elect/1.png" style="width:100%;height:100%" alt="Transistor"> 
+
+		<h5 class="center">For first time, carbon nanotube transistors outperform silicon</h5>
+		
+		<p>
+For decades, scientists have tried to harness the unique properties of carbon nanotubes to create high-performance electronics that are faster or consume less power—resulting in longer battery life, faster wireless communication and faster processing speeds for devices like smartphones and laptops.
+	</p>
+		<p>
+		
+		But a number of challenges have impeded the development of high-performance transistors made of carbon nanotubes, tiny cylinders made of carbon just one atom thick. Consequently, their performance has lagged far behind semiconductors such as silicon and gallium arsenide used in computer chips and personal electronics.
+
+		</p>
+		<p>
+		Now, for the first time, University of Wisconsin-Madison materials engineers have created carbon nanotube transistors that outperform state-of-the-art silicon transistors.
+
+		</p>
+		<p>
+		Led by Michael Arnold and Padma Gopalan, UW-Madison professors of materials science and engineering, the team's carbon nanotube transistors achieved current that's 1.9 times higher than silicon transistors. The researchers reported their advance in a paper published Friday (Sept. 2) in the journal Science Advances.
+
+
+		</p>
+		<p>
+		"This achievement has been a dream of nanotechnology for the last 20 years," says Arnold. "Making carbon nanotube transistors that are better than silicon transistors is a big milestone. This breakthrough in carbon nanotube transistor performance is a critical advance toward exploiting carbon nanotubes in logic, high-speed communications, and other semiconductor electronics technologies."
+
+		</p>
+		<p>
+		This advance could pave the way for carbon nanotube transistors to replace silicon transistors and continue delivering the performance gains the computer industry relies on and that consumers demand. The new transistors are particularly promising for wireless communications technologies that require a lot of current flowing across a relatively small area.
+
+		</p>
+		<p>
+		As some of the best electrical conductors ever discovered, carbon nanotubes have long been recognized as a promising material for next-generation transistors.
+
+
+		</p>
+		<p>
+		
+		Carbon nanotube transistors should be able to perform five times faster or use five times less energy than silicon transistors, according to extrapolations from single nanotube measurements. The nanotube's ultra-small dimension makes it possible to rapidly change a current signal traveling across it, which could lead to substantial gains in the bandwidth of wireless communications devices.
+
+		</p>
+		<p>
+		But researchers have struggled to isolate purely carbon nanotubes, which are crucial, because metallic nanotube impurities act like copper wires and disrupt their semiconducting properties—like a short in an electronic device.
+
+		</p>
+		<p>
+		<img src="img/logo/elect/2.jpg" class="left" style="padding:1%;width:50%;height:50%" alt="Transistor">
+		The UW-Madison team used polymers to selectively sort out the semiconducting nanotubes, achieving a solution of ultra-high-purity semiconducting carbon nanotubes.
+
+		</p>
+		<p>
+		"We've identified specific conditions in which you can get rid of nearly all metallic nanotubes, where we have less than 0.01 percent metallic nanotubes," says Arnold.
+
+
+		</p>
+		<p>
+		Placement and alignment of the nanotubes is also difficult to control.
+To make a good transistor, the nanotubes need to be aligned in just the right order, with just the right spacing, when assembled on a wafer. In 2014, the UW-Madison researchers overcame that challenge when they announced a technique, called "floating evaporative self-assembly," that gives them this control.
+The nanotubes must make good electrical contacts with the metal electrodes of the transistor. Because the polymer the UW-Madison researchers use to isolate the semiconducting nanotubes also acts like an insulating layer between the nanotubes and the electrodes, the team "baked" the nanotube arrays in a vacuum oven to remove the insulating layer. The result: excellent electrical contacts to the nanotubes.
+
+
+		</p>
+		
+		<p>
+		The researchers also developed a treatment that removes residues from the nanotubes after they're processed in solution.
+"In our research, we've shown that we can simultaneously overcome all of these challenges of working with nanotubes, and that has allowed us to create these groundbreaking carbon nanotube transistors that surpass silicon and gallium arsenide transistors," says Arnold.
+The researchers benchmarked their carbon nanotube transistor against a silicon transistor of the same size, geometry and leakage current in order to make an apples-to-apples comparison.
+
+
+		</p>
+		
+		<p>
+		They are continuing to work on adapting their device to match the geometry used in silicon transistors, which get smaller with each new generation. Work is also underway to develop high-performance radio frequency amplifiers that may be able to boost a cellphone signal. While the researchers have already scaled their alignment and deposition process to 1 inch by 1 inch wafers, they're working on scaling the process up for commercial production.
+Arnold says it's exciting to finally reach the point where researchers can exploit the nanotubes to attain performance gains in actual technologies.
+"There has been a lot of hype about carbon nanotubes that hasn't been realized, and that has kind of soured many people's outlook," he says. "But we think the hype is deserved. It has just taken decades of work for the materials science to catch up and allow us to effectively harness these materials."
+
+
+		</p>
+		
+<i> September 2, 2016 by Adam Malecek <br> Image author: Franz Kreupl</i>
+		<br /> <br />
+	<a href="https://phys.org/news/2016-09-carbon-nanotube-transistors-outperform-silicon.html">	Source </a>
+		
+		
+</div>
+</div>
+	</div>
+	    <div class="section">
+
+    
+      </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About</h5>
+          <p class="grey-text text-lighten-4">
+		  
+Treści zamieszczone nie są mojego autorstwa oraz nie posiadam do nich praw autorskich. Nie wykorzystuje zawartych tu treści w celach materialnych. Strona powstała jedynie w celach naukowych.<br>
+		  
+		  </p>
+
+        </div>
+     
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

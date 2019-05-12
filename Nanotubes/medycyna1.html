@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Nanoparticles vs. Cancer </title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
+<SCRIPT LANGUAGE= "JavaScript" type= "text/javascript">
+		 function check()
+		 {
+		 var user=document.login.login.value;
+		 var pass=document.login.pass.value;
+		 var spr1="admin";
+		 var spr2="admin"
+		 if((user==spr1)&& (pass==spr2))
+		 {
+			alert("Success! Redirecting...");
+			localStorage.setItem("logowanie","1");
+			document.location.href = "index.html";
+		 }
+		 else
+			alert("Oops, that's not a match. Try Again.");
+		 
+		 }
+		 
+		 function logoff()
+		 {
+		 if((localStorage.logowanie)!="1")
+			alert("You must be logged in to log off");
+		else
+		{	alert("Succesfully logout.");
+			localStorage.removeItem("logowanie");
+			}
+		 }
+		 
+		 function login()
+		 {
+		  if((localStorage.logowanie)=="1")
+			alert("You are already logged in.");
+		  else document.location.href = "login.html";
+		 }
+		 
+		 function zalogowany()
+		 {
+		 if((localStorage.logowanie)!="1")
+			{
+			alert("You must be logged in to view this article.");
+			document.location.href="login.html";
+			}
+		 }
+		 
+		 </script>
+  
+  
+</head>
+<body onLoad="zalogowany();">
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"> Carbon nanotube </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+		<li><a onClick="login();">Log in</a></li>
+		<li> <a onClick="logoff();">Log off</a></li>
+		<li><a href="rejestracja.html">Registration</a></li>
+
+		
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html">Home</a></li>
+		<li><a onClick="login();">Log in</a></li>
+		<li> <a onClick="logoff();">Log off</a></li>
+		<li><a href="rejestracja.html">Registration</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <br><br>
+
+
+
+  
+  
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+	  
+	  	  	  <br /><br />
+	  	<div class="card-panel hoverable"> <img src="img/logo/medycyna/3.jpg" style="width:100%;height:100%" alt="Cancer vs Nanotubes"> 
+
+		<h5 class="center"> Nanoparticles vs. Cancer </h5>
+        <p class="light">
+		<h6> <b> Some of the biggest advances coming in modern medicine may also be the tiniest. </b> </h6>
+		<p>
+		For a few decades, scientists have been learning how to design molecules 
+		that can operate in the human body. We’re talking about tiny particles that can manipulate 
+		biological processes—designed to bind to and thus block the enzyme essential 
+		for HIV replication, to help destroy tumors but not healthy cells, to weld together arteries after surgery.
+		</p>
+		<p>
+		On this small a level, also known as the nanoscopic scale or  nanoscale , chemists 
+		are building and manipulating matter as small as atoms, small molecules, proteins, antibodies,
+		and DNA bases that are less than 100 nanometers wide. These objects are much smaller than 
+		the cells in your body. Many are even tinier than the whisper-thin membrane that holds a human cell together.
+		</p>
+		<p>
+		Nanoparticles’ size makes them particularly useful against foes such as 
+		cancer. Unlike normal blood vessels that branch smoothly and flow in the same 
+		direction, blood vessels in tumors are a disorderly mess. And just as grime builds up 
+		in bad plumbing, nanoparticles, it seems, can be designed to build up in these problem growths.
+		</p>
+		<p>
+		<img src="img/logo/medycyna/1.jpg" class="left" style="padding:1%;width:50%;height:50%" alt="Cancer"> This quirk of tumors has led to a bewildering number of nanotech-related schemes to kill cancer.
+		The classic approach involves stapling drugs to nanoparticles that ensure delivery to tumors but not to
+		healthy parts of the body. A wilder method involves things like using a special kind of nanoparticle that 
+		absorbs infrared light. 
+		Shine a laser through the skin on the build-up, and the particles will heat up to fry the tumor from
+		the inside out.
+		</p>
+		<p>
+		Using lasers to cook tumors sounds like a great reason to 
+		throw chemotherapy out the window, except that it’s nearly impossible to foresee all 
+		of the possible pitfalls of unleashing particles so small. There are countless different
+		substances in each human cell, and it’s very hard to check how a molecule would interact
+		with every one of them. Chemists are good at predicting narrower outcomes, such as how a particular
+		molecule will work on its intended target, but they have had to resort to rough approximation to try 
+		to predict all of the possible interactions new nanoscale creations would have throughout the body. 
+		For instance, one particle turned out to be remarkably sticky. A whole blob of 
+		proteins stuck all over the particle like hair on a ball of tape, keeping it from even reaching its target.
+		</p>
+		<p>
+		here have been a number of success stories in which scientists were able
+		design and release new molecules with confidence, as with the HIV drug Viracept.
+		But the difficulty of computing the myriad of possible interactions has been the major
+		limiting factor stalling widespread use. It’s not all sunshine and cancer cures.
+		Nanoparticles have real risks.
+		</p>
+		<p>
+		Take nanotubes, tiny superstrong cylinders. Remember using lasers
+		to cook tumors? That involves nanotubes. Researchers also want to use
+		nanotubes to regrow broken bones and connect brains with computers. 
+		Although they hold a lot of promise, certain kinds of long carbon nanotubes 
+		are the same size and shape as asbestos. Both are fibers thin enough to pierce
+		deep inside the lungs but too long for the immune system to engulf and destroy. 
+		Mouse experiments have already suggested that inhaling these nanotubes causes the same harmful effects 
+		(such as a particularly deadly form of cancer) as the
+		toxic mineral once widely used in building insulation.
+		</p>
+		<p>
+		<img src="img/logo/medycyna/2.jpg" class="left" style="padding:1%;width:50%;height:50%" alt="Carbon nanotube"> Shorter nanotubes, however, don’t seem to be dangerous.
+		Nanoparticles can be built in all sorts of different ways, 
+		and it’s difficult to predict which ones will go bad. Imagine if houses with three
+		bathrooms gave everyone in them lung disease, while houses with two or
+		four bathrooms were safe. It gets to the central difficulty of these
+		nanoscale creations—the unforeseen dangers that could be the difference between biomiracle and bioterror.
+		</p>
+		<p>
+		<h5 class="center"> Unforeseen dangers could be the difference between biomiracle and bioterror. </h5>
+		
+		Enter  machine learning , 
+		that big shiny promise to solve all of our complicated problems.
+		The field holds a lot of potential when it comes to handling questions 
+		where there are many possible right answers. Scientists often take inspiration 
+		from nature—evolution, ant swarms, even our own brains—to teach machines the rules
+		for making predictions and producing outcomes without explicitly giving them step-by-step 
+		programming. Given the right inputs and guidelines, machines can be as good or even better 
+		than we are at recognizing and acting 
+		on patterns and can do so even faster and on a larger scale than humans alone are capable of pulling off.
+		
+		<p>
+		In earlier days, scanners could only recognize letters of specific fonts.
+		Today, after feeding computers tens of thousands of examples of handwritten digits 
+		to detect and extrapolate patterns from, ATMs are now reading handwriting on checks. 
+		In nanotechnology, the research is similar: Just like many slightly different shapes can
+		mean the same letter, many slightly different molecules can mean the same effect. 
+		Setting up a computer to learn how different nanoparticles might interact with the complex human 
+		body can assist with what were previously impossibly complex computations to predict billions 
+		of possible outcomes.
+		</p>
+		<p>
+		“[F]or this to be a useful thing to do it doesn’t have to be perfect,” Rob Nishihara,
+		a University of California, Berkeley, machine learning Ph.D. student and Facebook veteran 
+		(and a friend of mine), told me over email. 
+		“[E]ven a coarse estimate could really help narrow down the search space and propose candidate molecules.”
+		</p>
+		<p>
+		Here’s how it works. You put different kinds of nanoparticles in with cells and 
+		run dozens of experiments changing up variables 
+		such as particle lengths, materials, electrical properties, and so on. This gives you a training set.
+		</p>
+		<p>
+		Then you let your machine-learning algorithm loose to learn from the 
+		training set. After a few minutes of computation, it builds a model of what mattered. 
+		From there comes the nerve-wracking 
+		part; you give the machine a test set—data similar to but separate from your training set—and see how it does.
+		</p>
+		<p>
+		A good example is an experiment carried out by 
+		the University of California, Los Angeles’ Rong Liu and his colleagues,
+		published in 2011. This research team studied metal oxide nanoparticles—think 
+		tiny spheres of rust. These particles are potentially useful for MRI scans; they 
+		can provide contrast, giving doctors a clearer view of what’s going on inside the body. 
+		This makes it easier to diagnose disease or damage. The researchers put different varieties
+		of these particles in petri dishes with cells taken from human throat lining. The team 
+		observed which particles damaged the cells’ membranes, and then divided that data into 
+		a training set and a test set. Their best model correctly predicted which particles 
+		would damage cells in the test set. In fact, it predicted which particles would do damage
+		with 100 percent accuracy.
+		</p>
+		<p>
+		One hundred percent accuracy sounds like a great accomplishment.
+		But machine learning experts get skeptical when they see performance that high. 
+		The problem is that machine-learning algorithms sometimes do well on the training 
+		set but then fail when applied
+		to the new inputs of their first test. Or, even worse, they do well on the first tests for the wrong reasons.
+		</p>
+		<p>
+		One famous example of this happened a few years ago when  Google Flu Trends 
+		made waves for accurately “nowcasting” how many people had the flu. The initiative
+		based its estimates on the patterns its algorithms had found in how search trends lined
+		up with Centers for Disease Control and Prevention data on flu prevalence during a particular
+		window of time. Although its real-time flu forecasts seemed to square with the numbers of CDC-tracked
+		cases released with a two-week delay, its potentially 
+		life-saving predictive success didn’t last long. In fact, in subsequent years it failed rather dramatically.
+		</p>
+		<p>
+		It turned out that the algorithm was simply recognizing terms that people search a lot
+		in winter, like “high school basketball.” It was just a coincidence that the number of people 
+		searching about basketball and the number of people getting the flu matched up so 
+		well the first year, and unsurprisingly it didn’t work in the long term. A human would never make that mistake.
+		</p>
+		<p>
+		It’s not to say that big data can’t be valuable, and advances
+		in machine learning will absolutely lead to huge breakthroughs for nanomedicine. 
+		But it is reason to not turn the algorithms loose and let them do all the thinking,
+		especially when the stakes are as high as letting new creations loose in our amazingly complex, 
+		fine-tuned human bodies. As the lower-stakes Google Flu Trends failure taught us, machines will
+		need a lot more data before we can trust them to make predictions 
+		and, in some cases, a human hand to help transform the variables the machine starts with into more useful ones.
+		</p>
+		<p>
+		Here it’s useful to think of the example of the spam filter, one
+		of machine learning’s greatest successes. When programmers just threw the 
+		text of a spam email into a prediction function, it only learned how to stop 
+		messages with wording very similar to the training examples. Tell the function to take 
+		into account a wider range of variables,
+		such as the number of dollar signs, or percentage of all-caps words, and they got a much higher success rate.
+		</p>
+		<p>
+		The same goes for nanoparticles—the research done so
+		far has shown that it’s not just crude variables such as size and mass that need to
+		be taken into account but also properties such as  texture, circularity, surface material, 
+		and surface charge  that seem to be the best predictors
+		of whether they will harm cells. And, although it’s difficult to generalize with this, letting the machines
+		work with good data (and lots of it) seems to be more important than the learning algorithm researchers use.
+		</p>
+		<p>
+		It gets back to why many machine learning methods take cues from the natural
+		world—immune systems, bird flocks, and counting trees have all
+		informed successful predictive processes.
+		</p>
+		<p>
+		Nature is quirky and irregular. This is especially true on the nanoscale.
+		Which is why systems that are themselves quirky, irregular, and 
+		shaped over time and trial may be the best way to understand it. 
+		It does mean, however, that we will have to wait.
+		</p>
+		<p>
+		This article is part of the nanotechnology installment  of Futurography , a series in which Future Tense introduces readers to the technologies that will define tomorrow. Each month, we’ll choose a new 
+		technology and break it down. Future Tense is a collaboration among  Arizona State University, New America,  and Slate. 
+		</p>
+		<p>
+		
+James Pitt is a freelance writer in New York, with a background in human evolutionary biology. <br />
+<i> By James Pitt SEPT. 15 2016 
+<br> Images authors:Clare Ryan, D.S.Wagner et al.,Biomaterials, 31(2010), Ruchira Wijesena </i>
+		</p>
+		<br /> <br />
+	<a href="http://www.slate.com/articles/technology/future_tense/2016/09/using_machine_learning_to_predict_how_nanoparticles_will_react_in_the_human.html">	Source </a>
+		
+		
+</div>
+</div>
+	</div>
+	    <div class="section">
+
+    
+      </div>
+    <br><br>
+
+
+    <div class="section">
+
+    </div>
+
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About</h5>
+          <p class="grey-text text-lighten-4">
+		  
+		  Treści zamieszczone nie są mojego autorstwa oraz nie posiadam do nich praw autorskich. Nie wykorzystuje zawartych tu treści w celach materialnych. Strona powstała jedynie w celach naukowych.<br>
+		
+		  
+		  </p>
+
+
+        </div>
+        
+        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

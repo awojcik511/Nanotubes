@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Nanoelectronics</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" media="screen" type="text/css" rel="stylesheet" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
+<SCRIPT LANGUAGE= "JavaScript" type= "text/javascript">
+		 function check()
+		 {
+		 var user=document.login.login.value;
+		 var pass=document.login.pass.value;
+		 var spr1="admin";
+		 var spr2="admin"
+		 if((user==spr1)&& (pass==spr2))
+		 {
+			alert("Success! Redirecting...");
+			localStorage.setItem("logowanie","1");
+			document.location.href = "index.html";
+		 }
+		 else
+			alert("Oops, that's not a match. Try Again.");
+		 
+		 }
+		 
+		 function logoff()
+		 {
+		 if((localStorage.logowanie)!="1")
+			alert("You must be logged in to log off");
+		else
+		{	alert("Succesfully logout.");
+			localStorage.removeItem("logowanie");
+			}
+		 }
+		 
+		 function login()
+		 {
+		  if((localStorage.logowanie)=="1")
+			alert("You are already logged in.");
+		  else document.location.href = "login.html";
+		 }
+		 
+		 </script>
+  
+  
+</head>
+<body>
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"> Carbon nanotube </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+		<li><a onClick="login();">Log in</a></li>
+		<li> <a onClick="logoff();">Log off</a></li>
+		<li><a href="rejestracja.html">Registration</a></li>
+
+		
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html">Home</a></li>
+		<li><a onClick="login();">Log in</a></li>
+		<li> <a onClick="logoff();">Log off</a></li>
+		<li><a href="rejestracja.html">Registration</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <br><br>
+ <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/logo/1.jpg" alt="Slider number one"> 
+        <div class="caption center-align">
+        </div>
+      </li>
+      <li>
+        <img src="img/logo/2.jpg" alt="Slider number two"> 
+        <div class="caption left-align">
+        </div>
+      </li>
+      <li>
+        <img src="img/logo/3.jpg" alt="Slider number three"> 
+        <div class="caption right-align">
+        </div>
+      </li>
+      <li>
+        <img src="img/logo/4.jpg" alt="Slider number four"> 
+        <div class="caption center-align">
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  
+  
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+	  
+	  	  	  <br /><br />
+	  	<div class="card-panel hoverable"> <img src="img/logo/logo/5.png" style="width:100%; height:100%" alt="Solar panels"> 
+
+		<h5 class="center"> Solar Panels </h5>
+        <p class="light">
+		Organic photovoltaic devices (OPVs) are fabricated 
+		from thin films of organic semiconductors, such as polymers and small-molecule 
+		compounds, and are typically on the order of 100 nm thick. Because polymer based OPVs 
+		can be made using a coating process such as spin coating or inkjet printing, they are an
+		attractive option for inexpensively covering large areas as well as flexible plastic surfaces.
+		A promising low cost alternative to conventional solar cells made of crystalline silicon, 
+		there is a large amount of research being dedicated throughout industry and academia towards 
+		developing OPVs and increasing their power conversion efficiency.
+		<br /> <br />
+	<a href="https://en.wikipedia.org/wiki/Carbon_nanotubes_in_photovoltaics">	Source </a>
+		
+		</p>
+		 <a class="waves-effect waves-light btn" href="solar_index.html">Read more</a>
+		</div>
+<br>
+
+	  
+	    <div class="card-panel hoverable"> <img src="img/logo/logo/1.png" alt="Modern medicine" style="width:100%; height:100%"> 
+
+		<h5 class="center"> Modern medicine </h5>
+        <p class="light">
+		
+		
+		Modern medicine has done much in the
+		fields of infectious diseases and emergencies to aid cure.
+		In most other fields, it is mostly control that it aims for, 
+		which is another name for palliation. Pharmacology, psychopharmacology
+		included, is mostly directed towards such control and palliation too. 
+		The thrust, both of clinicians and research, must now turn decisively 
+		towards prevention and cure. 
+		
+		<br /> <br />
+	<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3031942/">Source </a>
+		
+		
+		</p>
+		 <a class="waves-effect waves-light btn" href="medycyna_index.html">Read more</a>
+
+  </div>
+		
+	
+	  
+	  <br><br>
+	  	<div class="card-panel hoverable"> <img src="img/logo/logo/2.png" alt="Water transport" style="width:100%; height:100%"> 
+
+		<h5 class="center"> Water transport </h5>
+        <p class="light">
+		Water shortages have become an increasingly pressing concern 
+		recently and with recent predictions of a high probability of the 
+		current drought turning into a megadrought occurring in the western 
+		United States, technologies involving water treatment and processing
+		need to improve. Carbon nanotubes (CNT) have been the subject of extensive 
+		studies because they demonstrate a range of unique properties that existing 
+		technologies lack. For example, carbon nanotube membranes can demonstrate higher 
+		water flux with lower energy than current membranes. These membranes can also filter
+		out particles that are too small for conventional systems which can lead to better water 
+		purification techniques and less waste. The largest obstacle facing CNT is
+		processing as it is difficult to produce them in the large quantities that most 
+		of these technologies will require.
+		
+		<br /> <br />
+	<a href="https://en.wikipedia.org/wiki/Carbon_nanotubes_for_water_transport">Source</a>
+		
+		</p>
+	 <a class="waves-effect waves-light btn" href="transport_index.html">Read more</a>
+
+  
+  </div>
+		
+		</div>
+	  
+	  	  <br><br>
+	  	<div class="card-panel hoverable"> <img src="img/logo/logo/3.png" alt="Carbon nanotubes in electronics" style="width:100%; height:100%"> 
+
+		<h5 class="center">Carbon Nanotubes and Electronics</h5>
+        <p class="light">
+		Building transistors from carbon nanotubes enables minimum transistor 
+		dimensions of a few nanometers and the development of techniques to manufacture integrated
+		circuits built with nanotube transistors.
+		
+			<br /> <br />
+	<a href="http://www.understandingnano.com/nanotechnology-electronics.html">Source</a>
+	
+		</p>
+		 <a class="waves-effect waves-light btn " href="electronics_index.html" >Read more</a>
+  </div>	
+		</div>
+	
+	    <div class="section">
+      </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About</h5>
+          <p class="grey-text text-lighten-4">
+		  
+Treści zamieszczone nie są mojego autorstwa oraz nie posiadam do nich praw autorskich. Nie wykorzystuje zawartych tu treści w celach materialnych. Strona powstała jedynie w celach naukowych.<br>
+		 	  
+		  </p>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

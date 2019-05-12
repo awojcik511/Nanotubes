@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Making better solar cells with polychiral carbon nanotubes </title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
+<SCRIPT LANGUAGE= "JavaScript" type= "text/javascript">
+		 function check()
+		 {
+		 var user=document.login.login.value;
+		 var pass=document.login.pass.value;
+		 var spr1="admin";
+		 var spr2="admin"
+		 if((user==spr1)&& (pass==spr2))
+		 {
+			alert("Success! Redirecting...");
+			localStorage.setItem("logowanie","1");
+			document.location.href = "index.html";
+		 }
+		 else
+			alert("Oops, that's not a match. Try Again.");
+		 
+		 }
+		 
+		 function logoff()
+		 {
+		 if((localStorage.logowanie)!="1")
+			alert("You must be logged in to log off");
+		else
+		{	alert("Succesfully logout.");
+			localStorage.removeItem("logowanie");
+			}
+		 }
+		 
+		 function login()
+		 {
+		  if((localStorage.logowanie)=="1")
+			alert("You are already logged in.");
+		  else document.location.href = "login.html";
+		 }
+		 function zalogowany()
+		 {
+		 if((localStorage.logowanie)!="1")
+			{
+			alert("You must be logged in to view this article.");
+			document.location.href="login.html";
+			}
+		 }
+		 
+		 </script>
+  
+  
+</head>
+<body onLoad="zalogowany();">
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"> Carbon nanotube </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+		<li><a onClick="login();">Log in</a></li>
+		<li> <a onClick="logoff();">Log off</a></li>
+		<li><a href="rejestracja.html">Registration</a></li>
+
+		
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html">Home</a></li>
+		<li><a onClick="login();">Log in</a></li>
+		<li> <a onClick="logoff();">Log off</a></li>
+		<li><a href="rejestracja.html">Registration</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <br><br>
+
+
+
+  
+  
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+	  
+	  	  	  <br /><br />
+	  	<div class="card-panel hoverable"> <img src="img/logo/solar/2.jpg" style="width:100%;height:100%" alt="Solar cells"> 
+
+		<h5 class="center"> Making better solar cells with polychiral carbon nanotubes</h5>
+		<p>
+		A new solar cell made from carbon nanotubes (CNTs) that is twice as good at converting sunlight into power than the best previous such cells has been unveiled by a team of researchers in the US. The National Renewable
+		Energy Laboratory (NREL) has already independently certified the performance of the device – a first for a CNT-based solar cell.
+
+		</p>
+		<p>
+
+Thin-film photovoltaic materials are better than conventional solar-cell materials (such as silicon) because they are lighter, more flexible and cheaper to make. They work by absorbing photons from sunlight and converting these into electron–hole pairs (or excitons). To generate electric current, an electron and hole must be rapidly separated before the two particles have a chance to come back together and be reabsorbed into the material. In solar cells, the exciton must quickly travel to another layer in the device (where the charge separation will occur) for the best light-absorption efficiencies
+
+		</p>
+		<p>
+Thin-film photovoltaic materials are better than conventional solar-cell materials (such as silicon) because they are lighter, more flexible and cheaper to make. They work by absorbing photons from sunlight and converting these into electron–hole pairs (or excitons). To generate electric current, an electron and hole must be rapidly separated before the two particles have a chance to come back together and be reabsorbed into the material. In solar cells, the exciton must quickly travel to another layer in the device (where the charge separation will occur) for the best light-absorption efficiencies
+
+		
+		</p>
+		<p>
+		<img src="img/logo/solar/3.jpg" class="left" style="padding:1%;height:50%;width:50%" alt="structure of solar cell"> 
+Single-walled carbon nanotubes (SWCNTs) are ideal as thin-film photovoltaics because they absorb light across a wide range of wavelengths from the visible to the near-infrared and possess charge carriers (electrons and holes) that move quickly. However, most thin-film cells containing SWCNTs have so far suffered from limited current and voltage, and therefore poor power-conversion efficiencies.
+		</p>
+		<h6> <b> Broader solar spectrum </b></h6>
+		
+		
+		<p>
+Now, a team led by Mark Hersam of Northwestern University and Shenqiang Ren of the University of Kansas, along with colleagues at the Massachusetts Institute of Technology, has designed a new type of solar cell containing polychiral SWCNTs and fullerenes that maximizes the amount of photocurrent produced by absorbing a broader range of solar-spectrum wavelengths. In particular, the cells significantly absorb in the near-infrared portion of the spectrum – a range that is currently inaccessible to many leading thin-film photovoltaic technologies, says Hersam.
+
+		</p>
+		<p>
+		A SWCNT is a sheet of carbon just one atom thick that has been rolled up into a tube with a diameter of about 1 nm. The atoms in the sheet are arranged in a hexagonal lattice and the relative orientation of the lattice to the axis of the tube is its chirality. "Previous CNT solar cells were mainly made from single-chirality CNTs, whereas our solar cells make use of tubes that are polychiral," explains Hersam. "By using these multiple chiralities, our CNT solar cells absorb across a wider portion of the solar spectrum, which leads to higher currents and efficiencies."
+		</p>
+		
+		<h6> <b> Record highs </b></h6>
+		
+		<p>
+		The researchers say that they also maximized the photovoltage produced by their solar cells by controlling the interface between the active photovoltaic layer and the underlying hole-transport layer. This interface layer allows the generated electrons and holes to meet and efficiently recombine.
+		
+		</p>
+		<p>
+		The devices could reignite interest in all-carbon solar cells, a research area that has been neglected in recent years. The fact that the new cells absorb across a broad range of wavelengths, including in the near-infrared, means that they could be especially useful as the active elements in tandem or multi-junction devices. As their name suggests, these devices contain two or more junctions, each of which absorbs light of different wavelengths from the Sun. For example, the junctions at the front of the cell can be made of a wider band-gap material that harvests high-energy photons, while more abundant lower-energy photons can be collected by a smaller-band-gap material situated at the back of the cell. These devices perform better than their single-junction counterparts, with power conversion efficiencies of about 42% compared with just over 30%.
+		
+		</p>
+		<p>
+		The team says that it is now busy trying to further improve the power-conversion efficiency of its CNT-based solar cells. "We also intend to introduce additional materials apart from fullerenes into our future cell designs that complement the properties of CNTs," says Hersam.
+		
+		</p>
+		
+		<p>
+		
+
+<i> By  Nano Letters.
+Aug 15, 2014 <br>Image author: Belle Dumé</i>
+		</p>
+		<br /> <br />
+	<a href="http://physicsworld.com/cws/article/news/2014/aug/15/making-better-solar-cells-with-polychiral-carbon-nanotubes">	Source </a>
+		
+		
+</div>
+</div>
+	</div>
+	    <div class="section">
+
+      </div>
+
+    <br><br>
+
+    <div class="section">
+
+    </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About</h5>
+          <p class="grey-text text-lighten-4">
+		  
+Treści zamieszczone nie są mojego autorstwa oraz nie posiadam do nich praw autorskich. Nie wykorzystuje zawartych tu treści w celach materialnych. Strona powstała jedynie w celach naukowych.<br>
+		   
+		  </p>
+
+
+        </div>
+       
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

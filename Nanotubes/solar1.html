@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Nanotubes and the dawn of the flexible solar cell </title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
+<SCRIPT LANGUAGE= "JavaScript" type= "text/javascript">
+		 function check()
+		 {
+		 var user=document.login.login.value;
+		 var pass=document.login.pass.value;
+		 var spr1="admin";
+		 var spr2="admin"
+		 if((user==spr1)&& (pass==spr2))
+		 {
+			alert("Success! Redirecting...");
+			localStorage.setItem("logowanie","1");
+			document.location.href = "index.html";
+		 }
+		 else
+			alert("Oops, that's not a match. Try Again.");
+		 
+		 }
+		 
+		 function logoff()
+		 {
+		 if((localStorage.logowanie)!="1")
+			alert("You must be logged in to log off");
+		else
+		{	alert("Succesfully logout.");
+			localStorage.removeItem("logowanie");
+			}
+		 }
+		 
+		 function login()
+		 {
+		  if((localStorage.logowanie)=="1")
+			alert("You are already logged in.");
+		  else document.location.href = "login.html";
+		 }
+		 
+		 function zalogowany()
+		 {
+		 if((localStorage.logowanie)!="1")
+			{
+			alert("You must be logged in to view this article.");
+			document.location.href="login.html";
+			}
+		 }
+		 
+		 </script>
+  
+  
+</head>
+<body onLoad="zalogowany();">
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"> Carbon nanotube </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+		<li><a onClick="login();">Log in</a></li>
+		<li> <a onClick="logoff();">Log off</a></li>
+		<li><a href="rejestracja.html">Registration</a></li>
+
+		
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html">Home</a></li>
+		<li><a onClick="login();">Log in</a></li>
+		<li> <a onClick="logoff();">Log off</a></li>
+		<li><a href="rejestracja.html">Registration</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <br><br>
+
+
+
+  
+  
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+	  
+	  	  	  <br /><br />
+	  	<div class="card-panel hoverable"> <img src="img/logo/solar/5.jpg" style="width:100%;height:100%" alt="Solar cells"> 
+
+		<h5 class="center"> Nanotubes and the dawn of the flexible solar cell</h5>
+        <p class="light">
+		<h6> <b> An exciting new development in material science could revolutionise solar cell design. </b> </h6>
+		<p>
+		Since its inception in the 1880s, the technology behind the photovoltaic (PV) cell has evolved slowly. By the mid 1930s PV cells were achieving efficiency (conversion of incident light to electrical energy) of approximately 1%. By the mid 1950s this had increased to about 5%.  Recent developments have seen efficiencies over 20%.
+
+		</p>
+		<p>
+		During this slow march of improvements the basic concepts have remained the same:
+
+Light enters the cell. 
+
+Photons are absorbed by a semiconductor and cause a flow of electrons.
+
+The flow is only permitted in one direction.
+
+The cells are organised into an array, generating a usable current.
+
+
+		</p>
+		<p>
+		Allowing light to enter the cell, and electricity to exit, limits the materials that can be used, as few have the necessary properties. Copper indium gallium selenide and gallium arsenide are two materials which demonstrate these properties. However, obtaining them can be an expensive process.
+
+		</p>
+		<p>
+		<img src="img/logo/solar/1.jpg" class="left" style="padding:1%;width:50%;height:50%" alt="Carbonic solar cells"> The development of a new carbon-based transparent conductor may present an alternative. Northwestern University in the United States, has come up with a novel solution: an application of nano-technology to create a flexible material that is both transparent and conductive. The use of carbon, rather than rare elements such as indium and gallium will help to reduce the cost of production. Traditional materials used in PV cells are generally brittle and as a result are limited in their form and use. The single-walled carbon nanotubes, on the other hand, open up a new range of design opportunities.
+
+		</p>
+		<p>
+		Mark C. Hersam and Tobin J. Marks, leading the research into this material have noted that it could have some interesting applications. You could imagine flexible solar panels becoming common-place items; a cap that could use the energy to cool your head, a laptop sleeve that could charge your computer when not in use, or curtains that contribute to your home energy supply. The possibilities are limited only by our creativity!
+
+		</p>
+		
+		<p>
+		
+
+<i> By Dave Collier
+28 Sep 2011 
+<br>
+Image author:Solar Cells © Lason
+
+</i>
+
+		</p>
+		<br /> <br />
+	<a href="http://www.earthtimes.org/scitech/nanotubes-dawn-flexible-solar-cell/1424/">	Source</a>
+		
+		
+</div>
+</div>
+	</div>
+	    <div class="section">
+
+    
+      </div>
+
+    <br><br>
+
+    <div class="section">
+
+    </div>
+
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About</h5>
+          <p class="grey-text text-lighten-4">
+		  
+Treści zamieszczone nie są mojego autorstwa oraz nie posiadam do nich praw autorskich. Nie wykorzystuje zawartych tu treści w celach materialnych. Strona powstała jedynie w celach naukowych.<br>
+		  	  
+		  </p>
+
+
+        </div>
+       
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

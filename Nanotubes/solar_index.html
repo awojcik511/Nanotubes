@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Nanoelectronics</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
+<SCRIPT LANGUAGE= "JavaScript" type= "text/javascript">
+		 function check()
+		 {
+		 var user=document.login.login.value;
+		 var pass=document.login.pass.value;
+		 var spr1="admin";
+		 var spr2="admin"
+		 if((user==spr1)&& (pass==spr2))
+		 {
+			alert("Success! Redirecting...");
+			localStorage.setItem("logowanie","1");
+			document.location.href = "index.html";
+		 }
+		 else
+			alert("Oops, that's not a match. Try Again.");
+		 
+		 }
+		 
+		 function logoff()
+		 {
+		 if((localStorage.logowanie)!="1")
+			alert("You must be logged in to log off");
+		else
+		{	alert("Succesfully logout.");
+			localStorage.removeItem("logowanie");
+			}
+		 }
+		 
+		 function login()
+		 {
+		  if((localStorage.logowanie)=="1")
+			alert("You are already logged in.");
+		  else document.location.href = "login.html";
+		 }
+		 
+		 </script>
+  
+  
+</head>
+<body>
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"> Carbon nanotube </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+		<li><a onClick="login();">Log in</a></li>
+		<li> <a onClick="logoff();">Log off</a></li>
+		<li><a href="rejestracja.html">Registration</a></li>
+
+		
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html">Home</a></li>
+		<li><a onClick="login();">Log in</a></li>
+		<li> <a onClick="logoff();">Log off</a></li>
+		<li><a href="rejestracja.html">Registration</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <br><br>
+ <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/logo/1.jpg" alt="Slider number 1"> 
+        <div class="caption center-align">
+        </div>
+      </li>
+      <li>
+        <img src="img/logo/2.jpg" alt="Slider number 2"> 
+        <div class="caption left-align">
+        </div>
+      </li>
+      <li>
+        <img src="img/logo/3.jpg" alt="Slider number 3"> 
+        <div class="caption right-align">
+        </div>
+      </li>
+      <li>
+        <img src="img/logo/4.jpg" alt="Slider number 4"> 
+        <div class="caption center-align">
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  
+  
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+	  
+	  	  	  <br /><br />
+	  	<div class="card-panel hoverable"> <img src="img/logo/logo/5.png" style="width:100%;height:100%" alt="solar cells">  
+		<h5 class="center">  Nanotubes and the dawn of the flexible solar cell </h5>
+        <p class="light">
+		An exciting new development in material science could revolutionise solar cell design.
+
+		<br /> <br />
+	<a href="http://www.earthtimes.org/scitech/nanotubes-dawn-flexible-solar-cell/1424/">	Source </a>
+		
+		</p>
+		
+<a class="waves-effect waves-light btn" href="solar1.html">Read more</a>
+		</div>
+<br>
+	    <div class="card-panel hoverable"> <img src="img/logo/logo/9.jpg" style="width:100%;height:100%" alt="Solar panels"> 
+
+		<h5 class="center"> Making better solar cells with polychiral carbon nanotubes </h5>
+        <p class="light">
+		
+		
+		A new solar cell made from carbon nanotubes (CNTs) that is twice as good at converting sunlight into power than the best previous such cells has been unveiled by a team of researchers in the US. The National Renewable Energy 
+		Laboratory (NREL) has already independently certified the performance of the device – a first for a CNT-based solar cell. 
+		
+		<br /> <br />
+	<a href="http://physicsworld.com/cws/article/news/2014/aug/15/making-better-solar-cells-with-polychiral-carbon-nanotubes">	Source </a>
+		
+		
+		</p>
+<a class="waves-effect waves-light btn" href="solar2.html">Read more</a>
+
+  </div>
+
+	  <br><br>
+	  	<div class="card-panel hoverable"> <img src="img/logo/logo/10.jpg" style="width:100%;height:100%" alt="Solar Panels">  
+
+		<h5 class="center"> All-Carbon Solar Cells Will Mean Cheap and Flexible Solar Panels </h5>
+        <p class="light">
+	
+	Flexible photovoltaics made of carbon promise low cost and durability, if their performance can be improved.
+		
+		<br /> <br />
+	<a href="https://www.technologyreview.com/s/506901/all-carbon-solar-cells-will-mean-cheap-and-flexible-solar-panels/">	Source </a>	
+		</p>
+ <a class="waves-effect waves-light btn" href="solar3.html">Read more</a>
+
+  
+  </div>		
+		</div>
+	
+		</div>
+
+	    <div class="section">
+
+    
+      </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About</h5>
+          <p class="grey-text text-lighten-4">
+		  
+Treści zamieszczone nie są mojego autorstwa oraz nie posiadam do nich praw autorskich. Nie wykorzystuje zawartych tu treści w celach materialnych. Strona powstała jedynie w celach naukowych.<br>
+		  	  
+		  </p>
+
+
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

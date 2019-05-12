@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Electronic nanotube</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
+<SCRIPT LANGUAGE= "JavaScript" type= "text/javascript">
+		 function check()
+		 {
+		 var user=document.login.login.value;
+		 var pass=document.login.pass.value;
+		 var spr1="admin";
+		 var spr2="admin"
+		 if((user==spr1)&& (pass==spr2))
+		 {
+			alert("Success! Redirecting...");
+			localStorage.setItem("logowanie","1");
+			document.location.href = "index.html";
+		 }
+		 else
+			alert("Oops, that's not a match. Try Again.");
+		 
+		 }
+		 
+		 function logoff()
+		 {
+		 if((localStorage.logowanie)!="1")
+			alert("You must be logged in to log off");
+		else
+		{	alert("Succesfully logout.");
+			localStorage.removeItem("logowanie");
+			}
+		 }
+		 
+		 function login()
+		 {
+		  if((localStorage.logowanie)=="1")
+			alert("You are already logged in.");
+		  else document.location.href = "login.html";
+		 }
+		 
+		 </script>
+  
+  
+</head>
+<body>
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"> Carbon nanotube </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+		<li><a onClick="login();">Log in</a></li>
+		<li> <a onClick="logoff();">Log off</a></li>
+		<li><a href="rejestracja.html">Registration</a></li>
+
+		
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="index.html">Home</a></li>
+		<li><a onClick="login();">Log in</a></li>
+		<li> <a onClick="logoff();">Log off</a></li>
+		<li><a href="rejestracja.html">Registration</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <br><br>
+ <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/logo/1.jpg " alt="Slider number 1"> 
+        <div class="caption center-align">
+        </div>
+      </li>
+      <li>
+        <img src="img/logo/2.jpg" alt="Slider number 2"> 
+        <div class="caption left-align">
+        </div>
+      </li>
+      <li>
+        <img src="img/logo/3.jpg" alt="Slider number 3">
+        <div class="caption right-align">
+        </div>
+      </li>
+      <li>
+        <img src="img/logo/4.jpg" alt="Slider number 4"> 
+        <div class="caption center-align">
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+  
+  
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+	  
+	  	  	  <br /><br />
+	  	<div class="card-panel hoverable"> <img src="img/logo/logo/12.png" alt="Carbon nanotube transistor"  style="width:100%;height:100%"> 
+
+		<h5 class="center"> For first time, carbon nanotube transistors outperform silicon </h5>
+        <p class="light">
+The UW-Madison engineers use a solution process to deposit aligned arrays of carbon nanotubes onto 1 inch by 1 inch substrates. The researchers used their scalable and rapid deposition process to coat the entire surface of this substrate with aligned carbon nanotubes in less than 5 minutes. The team's breakthrough could pave the way for carbon nanotube transistors to replace silicon transistors, and is particularly promising for wireless communications technologies
+
+	<a href="https://phys.org/news/2016-09-carbon-nanotube-transistors-outperform-silicon.html">	Source </a>
+		
+		</p>
+		
+	 <a class="waves-effect waves-light btn" href="electronics.html">Read more</a>
+
+		</div>
+<br>
+
+
+		</div>
+	  
+	  	  
+		
+		</div>
+	    <div class="section">
+
+    
+      </div>
+    <br><br>
+
+	
+	
+	
+    <div class="section">
+
+    </div>
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About</h5>
+          <p class="grey-text text-lighten-4">
+		  
+Treści zamieszczone nie są mojego autorstwa oraz nie posiadam do nich praw autorskich. Nie wykorzystuje zawartych tu treści w celach materialnych. Strona powstała jedynie w celach naukowych.<br>
+			  
+		  </p>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
